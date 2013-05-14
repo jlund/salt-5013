@@ -6,14 +6,14 @@ This repository contains a simple test case for Salt Issue [#5013](https://githu
 1. Install Vagrant
    * http://docs.vagrantup.com/v2/installation/index.html
 2. Install the Salty Vagrant plugin
-   * vagrant plugin install vagrant-salt)
+   * vagrant plugin install vagrant-salt
 3. Get the Ubuntu 12.04 base box
    * vagrant box add precise64 http://files.vagrantup.com/precise64.box
 4. Clone this test repository
    * git clone git@github.com:jlund/salt-5013
 5. Start the VM from the cloned directory
    * vagrant up
-6. Wait for the VM to start and for Salt to bootstrap, then connect to the VM
+6. Wait for the VM to boot and for Salt to bootstrap, then connect to the VM
    * vagrant ssh
 7. Run Salt on the VM
    * sudo salt-call --local state.highstate
